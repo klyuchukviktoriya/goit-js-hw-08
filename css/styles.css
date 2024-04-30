@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: rgb(236, 208, 84);
+}
+
+.gallery {
+  top: 50px;
+  margin: 0 auto;
+  width: 1440px;
+  height: 816px;
+  padding: 24px 156px;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.gallery-image {
+  object-fit: cover;
+  width: 360px;
+  height: 240px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.gallery-image:hover,
+.gallery-image:focus {
+  transform: scale(1.04);
+}
+
+.big-img {
+  border-radius: 8px;
+}
